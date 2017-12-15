@@ -41,6 +41,8 @@ public class PresentStand {
 		network = NetworkRegistry.INSTANCE.newSimpleChannel(MODID);
 		network.registerMessage(new PacketUpdatePresentStand.Handler(), PacketUpdatePresentStand.class, 0, Side.CLIENT);
 		network.registerMessage(new PacketRequestUpdatePresentStand.Handler(), PacketRequestUpdatePresentStand.class, 1, Side.SERVER);
+		
+		proxy.registerRenderers();
 	}
 
 	@Mod.EventHandler
