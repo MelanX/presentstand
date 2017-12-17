@@ -1,0 +1,24 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " d ",
+    "csc"
+  ],
+  "key": {
+    "d": {
+      "type": "forge:ore_dict",
+      "ore": "dyeLime"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "chest"
+    },
+    "c": {
+      "item": "minecraft:concrete",
+      "data": 5
+    }
+  },
+  "result": {
+    "item": "presentstand:lime_present_stand"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " d ",
+    "csc"
+  ],
+  "key": {
+    "d": {
+      "type": "forge:ore_dict",
+      "ore": "dyeLightBlue"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "chest"
+    },
+    "c": {
+      "item": "minecraft:concrete",
+      "data": 3
+    }
+  },
+  "result": {
+    "item": "presentstand:light_blue_present_stand"
+  }
+}

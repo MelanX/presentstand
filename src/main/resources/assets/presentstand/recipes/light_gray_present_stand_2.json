@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "type": "forge:ore_dict",
+            "ore": "blockPresentStand"
+        },
+        {
+            "type": "forge:ore_dict",
+            "ore": "dyeLightGray"
+        }
+     ],
+     "result": {
+        "item": "presentstand:light_gray_present_stand"
+     }
+}

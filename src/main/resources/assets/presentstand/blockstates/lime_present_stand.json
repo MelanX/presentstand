@@ -2,10 +2,10 @@
     "forge_marker": 1,
     "variants": {
         "normal": {
-            "model": "presentstand:present_stand"
+            "model": "presentstand:lime_present_stand"
         },
         "inventory": {
-            "model": "presentstand:present_stand",
+            "model": "presentstand:lime_present_stand",
             "transform": "forge:default-block"
         }
     }

@@ -1,4 +1,4 @@
-package de.melanx.presentstand.block.presentStand;
+package de.melanx.presentstand.block.presentStand.color;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -14,23 +14,29 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.oredict.OreDictionary;
 import de.melanx.presentstand.PresentStand;
 import de.melanx.presentstand.block.BlockTileEntity;
+import de.melanx.presentstand.block.presentStand.TileEntityPresentStand;
 
 import javax.annotation.Nullable;
 
-public class BlockPresentStand extends BlockTileEntity<TileEntityPresentStand> {
+public class PurplePresentStand extends BlockTileEntity<TileEntityPresentStand> {
 
-	public BlockPresentStand() {
-		super(Material.ROCK, "present_stand");
+	public PurplePresentStand() {
+		super(Material.ROCK, "purple_present_stand");
 		setCreativeTab(CreativeTabs.DECORATIONS);
 	}
 	
-	private static final AxisAlignedBB CROPS_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5625D, 1.0D);
+	public void initOreDict() {
+		OreDictionary.registerOre("blockPresentStand", this);
+	}
+	
+	private static final AxisAlignedBB STAND_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5625D, 1.0D);
 	
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return CROPS_AABB;
+		return STAND_AABB;
 	}
 
 	@Override

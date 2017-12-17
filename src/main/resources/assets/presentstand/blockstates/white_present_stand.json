@@ -1,0 +1,12 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "normal": {
+            "model": "presentstand:white_present_stand"
+        },
+        "inventory": {
+            "model": "presentstand:white_present_stand",
+            "transform": "forge:default-block"
+        }
+    }
+}
