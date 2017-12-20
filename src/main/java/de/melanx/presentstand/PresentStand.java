@@ -24,7 +24,7 @@ public class PresentStand {
 	
 	public static final String MODID = "presentstand";
 	public static final String name = "Present Stand";
-	public static final String version = "0.2";
+	public static final String version = "r-1.0";
 	
 	@SidedProxy(serverSide = "de.melanx.presentstand.proxy.CommonProxy", clientSide = "de.melanx.presentstand.proxy.ClientProxy")
 	public static CommonProxy proxy;

@@ -32,7 +32,15 @@ public class BlackPresentStand extends BlockTileEntity<TileEntityPresentStand> {
 		OreDictionary.registerOre("blockPresentStand", this);
 	}
 	
-	private static final AxisAlignedBB STAND_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5625D, 1.0D);
+	private static final AxisAlignedBB STAND_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 0.5625D, 0.9375D);
+	/*Just a try.. will get it.. anytimes :D
+	private static final AxisAlignedBB STAND_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 0.0625D, 0.9375D);
+	private static final AxisAlignedBB STAND_AABB_2 = new AxisAlignedBB(0.125D, 0.0625D, 0.125D, 0.875D, 0.125D, 0.875D);
+	private static final AxisAlignedBB STAND_AABB_3 = new AxisAlignedBB(0.1875D, 0.125D, 0.1875D, 0.8125D, 0.375D, 0.8125D);
+	private static final AxisAlignedBB STAND_AABB_4 = new AxisAlignedBB(0.125D, 0.375D, 0.125D, 0.875D, 0.4375D, 0.875D);
+	private static final AxisAlignedBB STAND_AABB_5 = new AxisAlignedBB(0.25D, 0.4375D, 0.25D, 0.75D, 0.5D, 0.75D);
+	private static final AxisAlignedBB STAND_AABB_6 = new AxisAlignedBB(0.375D, 0.5D, 0.375D, 0.875D, 0.625D, 0.875D);
+	*/
 	
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {

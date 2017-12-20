@@ -32,7 +32,7 @@ public class LightGrayPresentStand extends BlockTileEntity<TileEntityPresentStan
 		OreDictionary.registerOre("blockPresentStand", this);
 	}
 	
-	private static final AxisAlignedBB STAND_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5625D, 1.0D);
+	private static final AxisAlignedBB STAND_AABB = new AxisAlignedBB(0.0625D, 0.0D, 0.0625D, 0.9375D, 0.5625D, 0.9375D);
 	
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
