@@ -24,8 +24,10 @@ import javax.annotation.Nullable;
 public class BrownPresentStand extends BlockTileEntity<TileEntityPresentStand> {
 
 	public BrownPresentStand() {
-		super(Material.ROCK, "brown_present_stand");
+		super(Material.SAND, "brown_present_stand");
 		setCreativeTab(CreativeTabs.DECORATIONS);
+		this.setHarvestLevel("pickaxe", 0);
+		setHardness(0.7f);
 	}
 		
 	public void initOreDict() {
